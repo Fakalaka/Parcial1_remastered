@@ -1,2 +1,1 @@
-# Parcial1_remastered
-El bueno
+# parcial_1

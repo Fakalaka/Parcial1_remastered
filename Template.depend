@@ -1,0 +1,235 @@
+# depslib dependency file v1.0
+1524789645 source:d:\frey\template\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+
+1524789604 d:\frey\template\entidad1.h
+
+1525299796 source:d:\frey\template\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"contratacion.h"
+	"utn.h"
+
+1493742924 source:d:\frey\template\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1493742924 d:\frey\template\utn.h
+
+1525302232 source:d:\frey\template\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"contratacion.h"
+	"utn.h"
+
+1525299620 d:\frey\template\contratacion.h
+
+1525394598 source:d:\frey\mercadolibre\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"contratacion.h"
+	"utn.h"
+
+1525393101 d:\frey\mercadolibre\entidad1.h
+
+1525393569 d:\frey\mercadolibre\contratacion.h
+
+1493742924 d:\frey\mercadolibre\utn.h
+
+1525394326 source:d:\frey\mercadolibre\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+
+1525393662 source:d:\frey\mercadolibre\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"contratacion.h"
+	"utn.h"
+
+1493742924 source:d:\frey\mercadolibre\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525406014 source:c:\users\facun\desktop\frey\mercadolibre\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"contratacion.h"
+	"utn.h"
+
+1525977834 c:\users\facun\desktop\frey\mercadolibre\entidad1.h
+	"contratacion.h"
+
+1525977834 c:\users\facun\desktop\frey\mercadolibre\contratacion.h
+	"entidad1.h"
+
+1525406018 c:\users\facun\desktop\frey\mercadolibre\utn.h
+
+1525977906 source:c:\users\facun\desktop\frey\mercadolibre\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+	"contratacion.h"
+
+1525978472 source:c:\users\facun\desktop\frey\mercadolibre\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"contratacion.h"
+	"utn.h"
+
+1525406018 source:c:\users\facun\desktop\frey\mercadolibre\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525997820 source:d:\parcial_rey\entidad2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1525996878 d:\parcial_rey\entidad1.h
+	"entidad2.h"
+
+1525997792 d:\parcial_rey\entidad2.h
+	"entidad1.h"
+
+1525988581 d:\parcial_rey\utn.h
+
+1525988581 source:d:\parcial_rey\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525997858 source:d:\parcial_rey\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1525997338 source:d:\parcial_rey\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+	"entidad2.h"
+
+1526496527 source:c:\users\facun\desktop\frey\parcial\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+	"entidad2.h"
+
+1526496520 c:\users\facun\desktop\frey\parcial\entidad1.h
+	"entidad2.h"
+
+1526000511 c:\users\facun\desktop\frey\parcial\entidad2.h
+	"entidad1.h"
+
+1526000511 c:\users\facun\desktop\frey\parcial\utn.h
+
+1526497211 source:c:\users\facun\desktop\frey\parcial\entidad2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1526496520 source:c:\users\facun\desktop\frey\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1526000511 source:c:\users\facun\desktop\frey\parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1526583831 source:c:\users\facun\desktop\frey\parcial_1\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+	"entidad2.h"
+
+1526582926 c:\users\facun\desktop\frey\parcial_1\entidad1.h
+	"entidad2.h"
+
+1526530206 c:\users\facun\desktop\frey\parcial_1\entidad2.h
+	"entidad1.h"
+
+1526585606 c:\users\facun\desktop\frey\parcial_1\utn.h
+
+1526584525 source:c:\users\facun\desktop\frey\parcial_1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1526585606 source:c:\users\facun\desktop\frey\parcial_1\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1526584448 source:c:\users\facun\desktop\frey\parcial_1\entidad2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
