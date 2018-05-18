@@ -27,7 +27,7 @@ int publicacion_init(Publicacion* array,int limite)
         retorno=0;
         for(i=0;i<limite;i++){
             array[i].isEmpty=1;
-            array[i].ventas=0;
+            array[i].rubro=0;
         }
     }
     return retorno;
@@ -64,10 +64,10 @@ int publicacion_contratar(Publicacion* array,Cliente* arrayC,int limite,int limi
                             array[i].isPaused=0;
                             array[i].isEmpty=0;
                         }
+                        else retorno=-3;
                     }
                 }
             }
-            else retorno=-3;
         }
         else{
             retorno=-2;
@@ -173,7 +173,7 @@ int publicacion_mostrar(Publicacion* array,int limite,Cliente* arrayC)
         for(i=0;i<limite;i++){
             if(!array[i].isEmpty&&!array[i].isPaused){
                     userindex=cliente_buscarId(arrayC,limite,array[i].idCliente);
-                    printf("\nID: %d - Aviso: %s - Rubro: %d - CUIT Cliente: %d\n",array[i].id,array[i].aviso,array[i].rubro,arrayC[userindex].cuit);
+                    printf("\nID: %d - Aviso: %s - Rubro: %d - CUIT Cliente: %s\n",array[i].id,array[i].aviso,array[i].rubro,arrayC[userindex].cuit);
             }
         }
     }
@@ -272,8 +272,8 @@ int publicacion_reanudar(Publicacion* array,int limite,Cliente* arrayC,int limit
 int publicacion_informar(Publicacion* array,int limite)
 {
     int i;
-    int max;
-    int min;
+    int max=0;
+    int min=0;
     int contador=0;
     int rubro;
     if(!getValidInt("\nRubro: ","\nEso no es un rubro\n",&rubro,1,99,2)){

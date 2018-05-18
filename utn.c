@@ -162,31 +162,6 @@ int esAlfaNumerico(char str[])
    return 1;
 }
 
-
-/**
- * \brief Verifica si el valor recibido contiene solo números, + y -
- * \param str Array con la cadena a ser analizada
- * \return 1 si contiene solo numeros, espacios y un guion.
- *
- */
-int esTelefono(char str[])
-{
-   int i=0;
-   int contadorGuiones=0;
-   while(str[i] != '\0')
-   {
-       if((str[i] != ' ') && (str[i] != '-') && (str[i] < '0' || str[i] > '9'))
-           return 0;
-       if(str[i] == '-')
-            contadorGuiones++;
-       i++;
-   }
-   if(contadorGuiones==1) // debe tener un guion
-        return 1;
-
-    return 0;
-}
-
 /**
  * \brief Solicita un texto al usuario y lo devuelve
  * \param mensaje Es el mensaje a ser mostrado
@@ -323,6 +298,43 @@ int getValidString(char requestMessage[],char errorMessage[], char errorMessageL
             continue;
         }
         if(strlen(buffer) >= maxLenght)
+        {
+            printf ("%s",errorMessageLenght);
+            continue;
+
+        }
+        retorno=0;
+        strcpy(input,buffer);
+        break;
+    }
+    return retorno;
+}
+
+/**
+ * \brief Solicita un string
+ * \param requestMessage Es el mensaje a ser mostrado para solicitar el dato
+ * \param errorMessage Es el mensaje a ser mostrado en caso de error de tipo
+ * \param errorMessageLenght Es el mensaje a ser mostrado en caso de error de longitud
+ * \param input Array donde se cargará el texto ingresado
+ * \param length int Longitud que debe tener el string
+ * \param attemps indica la cantidad de reintentos ante un error
+ * \return 0 si consiguio el String -1 si no
+ *
+ */
+int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int length,int attemps)
+{
+    int j;
+    int retorno=-1;
+    char buffer[1024];
+
+    for(j=0;j<attemps;j++)
+    {
+        if (!getStringNumeros(requestMessage,buffer))
+        {
+            printf ("%s",errorMessage);
+            continue;
+        }
+        if(strlen(buffer)!=length)
         {
             printf ("%s",errorMessageLenght);
             continue;

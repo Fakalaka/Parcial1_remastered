@@ -5,9 +5,7 @@ typedef struct
 {
     char nombre[50];
     char apellido[50];
-    int cuit;
-    float calificacion;
-    int cantidadCalif;
+    char cuit[11];
     int id;
     int isEmpty;
 }Cliente;
@@ -21,7 +19,7 @@ int cliente_modificacion(Cliente* array,int limite,int id);
 int cliente_mostrar(Cliente* array,int limite,Publicacion* arrayP,int limiteP);
 int cliente_mostrarDebug(Cliente* array,int limite);
 int cliente_buscarId(Cliente* array,int limite,int id);
-int cliente_altaForzada(Cliente* array,int limite,char* nombre,char* apellido,int cuit);
+int cliente_altaForzada(Cliente* array,int limite,char* nombre,char* apellido,char* cuit);
 int cliente_mostrarPorId(Cliente* array,int limite,int id);
 int cliente_contarAvisos(Publicacion* array,int limite,int id);
 int cliente_maximoAvisos(Cliente* array,int limie,Publicacion* arrayP,int limiteP);

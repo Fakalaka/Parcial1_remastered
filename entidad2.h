@@ -7,7 +7,6 @@ typedef struct
     int idCliente;
     char aviso[64];
     int rubro;
-    int ventas;
     int isPaused;
     int isEmpty;
 }Publicacion;

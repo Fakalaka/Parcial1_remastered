@@ -8,15 +8,15 @@
 
 int main()
 {
-    Cliente array[QTYCliente];
-    Publicacion aviso[QTYPublicacion];
+    Cliente clientes[QTYCliente];
+    Publicacion avisos[QTYPublicacion];
     int menu;
     int auxiliarId;
-    cliente_init(array,QTYCliente);
-    publicacion_init(aviso,QTYPublicacion);
-    cliente_altaForzada(array,QTYCliente,"Ernesto","Hernandez",22056879);
-    cliente_altaForzada(array,QTYCliente,"Pepito","Pepazo",25506355);
-    cliente_altaForzada(array,QTYCliente,"Laura","Grueso",44450023);
+    cliente_init(clientes,QTYCliente);
+    publicacion_init(avisos,QTYPublicacion);
+    cliente_altaForzada(clientes,QTYCliente,"Juan","Boccardi","30280568797");
+    cliente_altaForzada(clientes,QTYCliente,"Pepe","Pepazo","20255063558");
+    cliente_altaForzada(clientes,QTYCliente,"Laura","Grueso","19414500236");
     do
     {
         menu=0;
@@ -24,37 +24,39 @@ int main()
         switch(menu)
         {
             case 1:
-                cliente_alta(array,QTYCliente);
+                cliente_alta(clientes,QTYCliente);
                 break;
             case 2:
                 getValidInt("ID? ","\nNumero no valido\n",&auxiliarId,0,999,2);
-                cliente_modificacion(array,QTYCliente,auxiliarId);
+                cliente_modificacion(clientes,QTYCliente,auxiliarId);
                 break;
             case 3:
                 getValidInt("ID? ","\nNumero no valido\n",&auxiliarId,0,999,2);
-                cliente_baja(array,QTYCliente,auxiliarId,aviso,QTYPublicacion);
+                if(cliente_baja(clientes,QTYCliente,auxiliarId,avisos,QTYPublicacion))
+                    printf("\nNo se encontro el cliente\n");
                 break;
             case 4:
-                publicacion_contratar(aviso,array,QTYPublicacion,QTYCliente);
+                if(publicacion_contratar(avisos,clientes,QTYPublicacion,QTYCliente))
+                    printf("\nError\n");
                 break;
             case 5:
-                publicacion_pausar(aviso,QTYPublicacion,array,QTYCliente);
+                publicacion_pausar(avisos,QTYPublicacion,clientes,QTYCliente);
                 break;
             case 6:
-                publicacion_reanudar(aviso,QTYPublicacion,array,QTYCliente);
+                publicacion_reanudar(avisos,QTYPublicacion,clientes,QTYCliente);
                 break;
             case 7:
                 printf("\n");
-                cliente_mostrar(array,QTYCliente,aviso,QTYPublicacion);
+                cliente_mostrar(clientes,QTYCliente,avisos,QTYPublicacion);
                 break;
             case 8:
-                publicacion_mostrar(aviso,QTYPublicacion,array);
+                publicacion_mostrar(avisos,QTYPublicacion,clientes);
                 break;
             case 9:
-                cliente_informar(array,QTYCliente,aviso,QTYPublicacion);
+                cliente_informar(clientes,QTYCliente,avisos,QTYPublicacion);
                 break;
             case 10:
-                publicacion_informar(aviso,QTYPublicacion);
+                publicacion_informar(avisos,QTYPublicacion);
                 break;
             case 11:
                 printf("\nChau!\n");

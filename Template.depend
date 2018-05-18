@@ -233,3 +233,43 @@
 	"entidad2.h"
 	"utn.h"
 
+1526598924 source:d:\frey\parcial1_remastered\entidad1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"utn.h"
+	"entidad2.h"
+
+1526597017 d:\frey\parcial1_remastered\entidad1.h
+	"entidad2.h"
+
+1526594361 d:\frey\parcial1_remastered\entidad2.h
+	"entidad1.h"
+
+1526596890 d:\frey\parcial1_remastered\utn.h
+
+1526600044 source:d:\frey\parcial1_remastered\entidad2.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1526600064 source:d:\frey\parcial1_remastered\main.c
+	<stdio.h>
+	<stdlib.h>
+	"entidad1.h"
+	"entidad2.h"
+	"utn.h"
+
+1526598059 source:d:\frey\parcial1_remastered\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
